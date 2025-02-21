@@ -10,7 +10,7 @@ def word(w):
     elif w.title() in data: #if the user entered texas the program will still find the word
         return data[w.title()]
 
-    elif w.upper() in data: #in case user enters words like USA or NATO
+    elif w.upper() in data: #in case user enters an uppercase word
         return data[w.upper()]
 
     elif len(get_close_matches(w, data.keys())) > 0: #wanna check if the length of the list is greater than 0
